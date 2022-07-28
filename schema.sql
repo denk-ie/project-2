@@ -1,7 +1,7 @@
-DROP TABLE overdoses;
 DROP TABLE mass_shootings;
 DROP TABLE accidental_deaths;
 DROP TABLE accidental_injuries;
+DROP TABLE overdoses;
 
 CREATE TABLE overdoses (
   ID INT NOT NULL,
