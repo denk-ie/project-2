@@ -1,23 +1,13 @@
 # Extract, Transform & Load (ETL) Project Report
 #### by Huy Dinh, Alexander Powers, Jeya Emmanuel and Denise Okur
 
+1. Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
 
-At the end of the week, your team will submit a Final Report that describes the following:
+The sources we found were CSV files. One contains up to date [gun violence data](https://www.gunviolencearchive.org/reports) in the United States, we narrowed our scope by focusing on accidental deaths, accidental injuries and mass shootings data. The other source contains the number of deaths from [overdosing on opioids](https://www.kaggle.com/datasets/apryor6/us-opiate-prescriptions?select=overdoses.csv) arranged by state in 2014. We believe analysis could be performed by linking these datasets by each state then finding correlations between gun violence and drug overdoses.
 
+2. Transform: what data cleaning or transformation was required.
 
-Extract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
+Pandas was used to read in the files to a Jupyter Notebook. The Operations and Address columns from the gun violence data were dropped, the Operations column didn't have sufficient information and the Address column wasn't in the right format and some rows had random data. The Abbrev column was dropped from the overdoses dataset as it was thought to be unnecessary for our purposes.
 
-https://www.gunviolencearchive.org/reports
-https://www.kaggle.com/datasets/apryor6/us-opiate-prescriptions?select=prescriber-info.csv 
+3. Load: the final database, tables/collections, and why this was chosen.
 
-CSV and PgAdmin4, Pandas
-
-
-Transform: what data cleaning or transformation was required.
-
-Operations column didn't have sufficient information so we removed entire columns
-Address column wasn't in the right format and some rows had random data, so we didn't use this for our final data
-
-
-
-Load: the final database, tables/collections, and why this was chosen.
