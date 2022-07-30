@@ -9,5 +9,7 @@ The sources we found were CSV files. One contains up to date [gun violence data]
 
 Pandas was used to read in the files to a Jupyter Notebook. The Operations and Address columns from the gun violence data were dropped, the Operations column didn't have sufficient information and the Address column wasn't in the right format and some rows had random data. The Abbrev column was dropped from the overdoses dataset as it was thought to be unnecessary for our purposes.
 
+There were rows in the gun violence dataset that contained a state that was not in the overdoses dataset, so rows containing "District of Columbia" as the state were removed.
+
 3. Load: the final database, tables/collections, and why this was chosen.
 
